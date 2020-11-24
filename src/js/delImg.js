@@ -21,6 +21,5 @@ export default async function delImg(e) {
   const result = await response.text();
   console.log(result);
   showFiles.innerHTML = result;
-  
   parent.remove(); // удаляем контейнер с картинкой и Х
-}
+};
