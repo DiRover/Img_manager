@@ -14,7 +14,7 @@ export default async function delImg(e) {
   const img = target.previousSibling; // находим картинку
   const src = img.getAttribute('src'); // получаем значение атрибута src
   console.log(src);
-  console.log(`${src}`)
+  console.log(`${src}`);
   const response = await fetch(`${src}`, {
     method: 'DELETE',
   });
@@ -22,4 +22,4 @@ export default async function delImg(e) {
   console.log(result);
   showFiles.innerHTML = result;
   parent.remove(); // удаляем контейнер с картинкой и Х
-};
+}
